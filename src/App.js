@@ -20,7 +20,7 @@ function App() {
   return (
     <Router>
         
-         <HeaderComponent/>
+         <HomeComponent/>
 
               <div className="container">
                 
