@@ -15,12 +15,15 @@ import AddAnnouncement from './components/AddAnnouncement';
 import EnrolledStudents from './components/EnrolledStudents';
 import AddContentComponent from './components/AddContentComponent';
 import ViewResultsComponent from './components/ViewResultsComponent';
-
+import Navbar from './components/Navbar';
+import HeaderComponent from './components/HeaderComponent';
+import FooterComponent from './components/FooterComponent';
 function App() {
   return (
+    <div>
     <Router>
         
-         
+         <HeaderComponent></HeaderComponent>
 
               <div className="container">
                 
@@ -43,13 +46,15 @@ function App() {
                 </Routes>
                 
               </div>
-              
+              <br></br>
+              <FooterComponent></FooterComponent>
               
 
          
 
         
       </Router>
+      </div>
   );
 }
 
