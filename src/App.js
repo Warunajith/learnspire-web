@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import Navbar from './components/Navbar';
+
 import HomeComponent from './components/HomeComponent'
 import SignUpComponent from './components/SignUpComponent'
 import {BrowserRouter as Router,Route,Routes} from 'react-router-dom';
@@ -20,7 +20,7 @@ function App() {
   return (
     <Router>
         
-         <HomeComponent/>
+         
 
               <div className="container">
                 
