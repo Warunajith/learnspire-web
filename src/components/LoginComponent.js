@@ -3,6 +3,7 @@ import { useState,useEffect } from 'react'
 import { Link ,useParams,useNavigate} from 'react-router-dom';
 import AuthenticationService from '../services/AuthenticationService';
 import UserService from '../services/UserService';
+import FrontImage from '../assets/Image1.jpg'
 
 
 export default function LoginComponent() {
@@ -55,6 +56,7 @@ export default function LoginComponent() {
     }
   return (
     <div>
+        <div className='home' style={{ backgroundImage: `url(${FrontImage})` }}>
 
 <div className='container'>
                     <br></br>
@@ -106,7 +108,7 @@ export default function LoginComponent() {
                         </div>
 
                     </div>
-
+                    </div>
 
     </div>
   )

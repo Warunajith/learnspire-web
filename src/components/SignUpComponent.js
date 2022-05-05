@@ -3,10 +3,12 @@ import { useState,useEffect } from 'react'
 import { Link ,useParams,useNavigate} from 'react-router-dom';
 import axios from 'axios';
 import AuthenticationService from '../services/AuthenticationService';
+import FrontImage from '../assets/Image1.jpg'
 
 
 
 export default function SignUpComponent() {
+    
 
   const [firstName,setFirstName]=useState('')
   const [lastName,setLastName]=useState('')
@@ -32,9 +34,11 @@ export default function SignUpComponent() {
   }
 
   return (
-    <div>
 
-                <div className='container'>
+    <div>
+        <div className='home' style={{ backgroundImage: `url(${FrontImage})` }}>
+
+        <div className='container'>
                     <br></br>
                         <div className='row'>
 
@@ -109,8 +113,11 @@ export default function SignUpComponent() {
                                 </div>
                             </div>
                         </div>
-
                     </div>
+
+                
+
+                </div>
 
 
 
