@@ -16,8 +16,9 @@ addUser(){
     axios.post('https://lms.team8backend.tech/user/adduser',null,{ headers: b });
 }
 
-addNewCourse(obj){
-    axios.post('https://lms.team8backend.tech/course/addnewcourse',obj,{ headers: AuthenticationHeader()});
+addNewCourse(courseId,courseName){
+
+   axios.post('https://lms.team8backend.tech/course/addnewcourse',{"id" :courseId ,"name":courseName},{ headers: AuthenticationHeader()});
 
 }
 
@@ -45,6 +46,27 @@ viewAnnouncements(id){
 getMarks(id){
     return axios.post('https://lms.team8backend.tech/mark/getmarks',{"courseId" :id },{ headers: AuthenticationHeader()});
 }
+addNewAnnouncement(courseId,title,content){
+
+    axios.post('https://lms.team8backend.tech/announcement/addannouncement',{"courseId" :courseId ,"title":title,"content":content},{ headers: AuthenticationHeader()});
+ 
+ }
+ getEnrStudents(id){
+    return axios.post('https://lms.team8backend.tech/mark/getenrolledstudents',{"courseId" :id}, { headers: AuthenticationHeader()});
+ }
+ addContent(courseId,title,content){
+
+    return axios.post('https://lms.team8backend.tech/content/addcontent',{"courseId" :courseId ,"title":title,"content":content}, { headers: AuthenticationHeader()});
+
+ }
+getCourseMarkOfUser(id){
+    return axios.post('https://lms.team8backend.tech/mark/getmarks',{"courseId" :id}, { headers: AuthenticationHeader()});
+}
+getallmarks(){
+    return axios.get('https://lms.team8backend.tech/mark/getallmarks', { headers: AuthenticationHeader()});
+}
+
+
 
 }
 export default new UserService();

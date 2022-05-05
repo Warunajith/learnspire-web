@@ -9,7 +9,7 @@ export default function LoginComponent() {
 
     const [email,setEmail]=useState('')
     const [password,setPassword]=useState('')
-
+    
     const navigate = useNavigate();
 
     const loginUser=(e)=>{
@@ -33,6 +33,7 @@ export default function LoginComponent() {
 
                   }
                   else{
+                    UserService.addUser();
                     console.log("Lecturer");
                     navigate("/lecturerview");
                   }

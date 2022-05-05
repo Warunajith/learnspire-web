@@ -9,6 +9,11 @@ import LecturerViewComponent from './components/LecturerViewComponent';
 import AvailableCoursesComponenet from './components/AvailableCoursesComponenet';
 import EnrolledCoursesComponent from './components/EnrolledCoursesComponent';
 import CourseContentComponent from './components/CourseContentComponent';
+import AddNewCourseComponent from './components/AddNewCourseComponent';
+import AddAnnouncement from './components/AddAnnouncement';
+import EnrolledStudents from './components/EnrolledStudents';
+import AddContentComponent from './components/AddContentComponent';
+import ViewResultsComponent from './components/ViewResultsComponent';
 
 function App() {
   return (
@@ -28,7 +33,12 @@ function App() {
                   <Route path="/availablecourses" element={<AvailableCoursesComponenet/>}></Route>
                   <Route path="/enrolledcourses" element={<EnrolledCoursesComponent/>}></Route>
                   <Route path="/coursecontent/:id" element={<CourseContentComponent/>}></Route>
-                 
+                  <Route path="/addnewcourse" element={<AddNewCourseComponent/>}></Route>
+                  <Route path="/addnewannouncement/:id" element={<AddAnnouncement/>}></Route>
+                  <Route path="/enrolledstudents/:id" element={<EnrolledStudents/>}></Route>
+                  <Route path="/addcontent/:id" element={<AddContentComponent/>}></Route>
+                  <Route path="/viewresults/" element={<ViewResultsComponent/>}></Route>
+
                 </Routes>
                 
               </div>

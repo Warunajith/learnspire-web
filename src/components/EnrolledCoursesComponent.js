@@ -44,7 +44,7 @@ const unenroll=()=>{
                         <thead>
                             <tr>
                                 <th>Enrolled Courses</th>
-                                <th>Marks</th>
+                                
                                 <th></th>
                             </tr>
 
@@ -55,7 +55,7 @@ const unenroll=()=>{
                                     course=>
                                     <tr key={course.id}>
                                         <td><Link to={`/coursecontent/${course.id}`}>{course.name}</Link></td>
-                                        <td>{marks}</td>
+                                       
                                         <td><button className="btn btn-danger" onClick={()=>unenroll()}>UnEnroll</button></td>
                                             
                                            
