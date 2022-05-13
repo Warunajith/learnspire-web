@@ -9,14 +9,14 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 class FooterComponent extends Component {
     render() {
         return (
-        <div id="footer">
+        <div class="footer">
         
         <div class="footer-area primary-bg pt-150">
             <div class="container">
                 <div class="footer-top pb-35">
                     <div class="row">
                         
-                        <div class="col-xl-6 col-lg-2 col-md-6">
+                        <div class="col-xl-4 col-lg-3 col-md-6">
                             <div class="footer-widget mb-30">
                                 <div class="footer-heading">
                                     <h1>Quick Links</h1>
@@ -36,7 +36,7 @@ class FooterComponent extends Component {
                             </div>
                         </div>
                         
-                        <div class="col-xl-6 col-lg-2  col-md-6">
+                        <div class="col-xl-4 col-lg-3  col-md-6">
                             <div class="footer-widget mb-30">
                                 <div class="footer-heading">
                                     <h1>Contact Us</h1>
@@ -63,21 +63,25 @@ class FooterComponent extends Component {
                                 </div>
                             </div>
                         </div>
-                        
-                    </div>
-                    <div className='row'>
-                    
-                           <div className='socialMedia'>
-                           <div >
+                        <div class="col-xl-4 col-lg-3 col-md-6">
+                            <div class="footer-widget mb-30">
+                                <div class="footer-heading">
                                     <h1>Social Media</h1>
                                 </div>
-                               <InstagramIcon /> 
-                               <TwitterIcon /> 
-                               <FacebookIcon />
-                               <LinkedInIcon />
-                           </div>
+                                <div class="footer-menu clearfix">
+                                    <ul>
+                                        <li><a href="#"><InstagramIcon /> </a></li>
+                                        <li><a href="#"><TwitterIcon /> </a></li>
+                                        <li><a href="#"><FacebookIcon /></a></li>
+                                        <li><a href="#"><LinkedInIcon /></a></li>   
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
                         
                     </div>
+                    
                 </div>
                 
             </div>

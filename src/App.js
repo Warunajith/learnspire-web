@@ -7,7 +7,7 @@ import {BrowserRouter as Router,Route,Routes} from 'react-router-dom';
 import LoginComponent from './components/LoginComponent';
 import StudentViewComponent from './components/StudentViewComponent';
 import LecturerViewComponent from './components/LecturerViewComponent';
-import AvailableCoursesComponenet from './components/AvailableCoursesComponenet';
+import AvailableCoursesComponent from './components/AvailableCoursesComponent';
 import EnrolledCoursesComponent from './components/EnrolledCoursesComponent';
 import CourseContentComponent from './components/CourseContentComponent';
 import AddNewCourseComponent from './components/AddNewCourseComponent';
@@ -18,6 +18,11 @@ import ViewResultsComponent from './components/ViewResultsComponent';
 import Navbar from './components/Navbar';
 import HeaderComponent from './components/HeaderComponent';
 import FooterComponent from './components/FooterComponent';
+import AboutUs from './components/AboutUs';
+import Profile from './components/Profile';
+import EnrollCourse from './components/EnrollCourseComponent'
+
+
 function App() {
   return (
     <div>
@@ -32,17 +37,16 @@ function App() {
                   <Route path="/" exact element={<HomeComponent/>}></Route>
                   <Route path="/signup" element={<SignUpComponent/>}></Route>
                   <Route path="/signin" element={<LoginComponent/>}></Route>
-                  <Route path="/studentview" element={<StudentViewComponent/>}></Route>
-                  <Route path="/lecturerView" element={<LecturerViewComponent/>}></Route>
-                  <Route path="/availablecourses" element={<AvailableCoursesComponenet/>}></Route>
-                  <Route path="/enrolledcourses" element={<EnrolledCoursesComponent/>}></Route>
-                  <Route path="/coursecontent/:id" element={<CourseContentComponent/>}></Route>
-                  <Route path="/addnewcourse" element={<AddNewCourseComponent/>}></Route>
-                  <Route path="/addnewannouncement/:id" element={<AddAnnouncement/>}></Route>
-                  <Route path="/enrolledstudents/:id" element={<EnrolledStudents/>}></Route>
-                  <Route path="/addcontent/:id" element={<AddContentComponent/>}></Route>
-                  <Route path="/viewresults/" element={<ViewResultsComponent/>}></Route>
-
+                  <Route path="/studentview" element={ <> <Navbar/> <StudentViewComponent /> <FooterComponent /></>}/>
+                  <Route path="/lecturerView" element={ <> <Navbar/> <LecturerViewComponent/> <FooterComponent /></>}/>
+                  <Route path="/available" element={ <> <Navbar/> <AvailableCoursesComponent/> <FooterComponent /></>}/>
+                  <Route path="/enrolled" element={ <> <Navbar/> <EnrolledCoursesComponent/> <FooterComponent /></>}/>
+                  <Route path="/coursecontent/:id" element={ <> <Navbar/> <CourseContentComponent/> <FooterComponent /></>}/>
+                  <Route path="/aboutus" element={ <><Navbar/>  <AboutUs/> <FooterComponent /></>}/>
+                  <Route path="/profile" element={ <><Navbar/>  <Profile/> <FooterComponent /></>}/>
+                  <Route path="/enrollcourse" element={ <><Navbar/>   <EnrollCourse /> <FooterComponent /></>}/>
+                  
+                 
                 </Routes>
                 
               </div>
