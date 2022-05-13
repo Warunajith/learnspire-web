@@ -16,20 +16,20 @@ function Navbar() {
         <div className='leftSide' id={openLinks ? 'open' : 'close'}>
           <img src={Logo} />
           <div className='hiddenLinks'>
-            <Link to='/'> Home </Link>
+            <Link to='/home'> Home </Link>
             <Link to='/enrolled'> Enrolled Courses </Link>
             <Link to='/available'> Available Courses </Link>
-            <Link to='/about'> About </Link>
+            <Link to='/aboutus'> About </Link>
             <Link to='/profile'>
             <AccountCircleIcon/>
           </Link>
           </div>
         </div>
         <div className='rightSide'>
-          <Link to='/'> Home </Link>
+          <Link to='/home'> Home </Link>
           <Link to='/enrolled'> Enrolled Courses </Link>
           <Link to='/available'> Available Courses </Link>
-          <Link to='/about'> About </Link>
+          <Link to='/aboutus'> About </Link>
           <Link to='/profile'>
             <AccountCircleIcon/>
           </Link>

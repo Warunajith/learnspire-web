@@ -15,8 +15,8 @@ export default function StudentViewComponent() {
 
       <h1>Welcome Student view Page</h1>
       
-      <Link className="btn btn-info" to="/availablecourses" style={{marginRight:"20px",marginLeft:"15px"}}>Available Courses</Link>
-      <Link className="btn btn-info" to="/enrolledcourses">Enrolled  Courses</Link>
+      <Link className="btn btn-info" to="/available" style={{marginRight:"20px",marginLeft:"15px"}}>Available Courses</Link>
+      <Link className="btn btn-info" to="/enrolled">Enrolled  Courses</Link>
       
       
     </div>

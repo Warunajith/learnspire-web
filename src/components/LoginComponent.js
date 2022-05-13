@@ -30,7 +30,7 @@ export default function LoginComponent() {
                   if(roles==="student"){
                     UserService.addUser();
                     console.log(roles);
-                    navigate("/studentview");
+                    navigate("/home");
 
                   }
                   else{
