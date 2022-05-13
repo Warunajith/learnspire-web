@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import Logo from '../assets/logo.png'
 import {Link} from 'react-router-dom'
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+
 import ReorderIcon from '@mui/icons-material/Reorder';
 import '../styles/Navbar.css'
 
@@ -21,6 +22,7 @@ function Navbar() {
             <Link to='/available'> Available Courses </Link>
             <Link to='/about'> About </Link>
             <Link to='/profile'>
+            
             <AccountCircleIcon/>
           </Link>
           </div>

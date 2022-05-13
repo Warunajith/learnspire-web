@@ -34,6 +34,7 @@ export default function ViewResultsComponent() {
                                 
                                 <th>Course</th>
                                 <th>Marks</th>
+                                <th>Grade</th>
                                 
                             </tr>
 
@@ -46,6 +47,7 @@ export default function ViewResultsComponent() {
                                     
                                         <td>{subject.courseName}</td>
                                         <td>{subject.marks}</td>
+                                        <td>{subject.grade}</td>
                                        
                                        
                                             

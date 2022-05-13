@@ -23,15 +23,28 @@ function App() {
     <div>
     <Router>
         
-         <HeaderComponent></HeaderComponent>
+        
 
-              <div className="container">
-                
-                <Routes>
+                <div>
+              
+                  <Routes>
                   
                   <Route path="/" exact element={<HomeComponent/>}></Route>
                   <Route path="/signup" element={<SignUpComponent/>}></Route>
                   <Route path="/signin" element={<LoginComponent/>}></Route>
+
+                  </Routes>
+                  </div>
+
+
+                  <div className="container">
+
+                 
+                  
+                  <br></br>
+                  <Routes>
+
+                  
                   <Route path="/studentview" element={<StudentViewComponent/>}></Route>
                   <Route path="/lecturerView" element={<LecturerViewComponent/>}></Route>
                   <Route path="/availablecourses" element={<AvailableCoursesComponenet/>}></Route>
@@ -43,15 +56,15 @@ function App() {
                   <Route path="/addcontent/:id" element={<AddContentComponent/>}></Route>
                   <Route path="/viewresults/" element={<ViewResultsComponent/>}></Route>
 
-                </Routes>
+                   </Routes>
+                <br></br>
+               
+                </div>
                 
-              </div>
-              <br></br>
-              <FooterComponent></FooterComponent>
               
-
-         
-
+              <br></br>
+              
+  
         
       </Router>
       </div>
