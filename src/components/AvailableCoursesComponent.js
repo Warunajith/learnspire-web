@@ -1,58 +1,55 @@
 import React from 'react'
 import UserService from '../services/UserService';
 import { useState,useEffect } from 'react';
-import { Link ,useParams,useNavigate} from 'react-router-dom';
-import '../styles/EnrolledCoursesComponent.css'
+import '../styles/AvailableCoursesComponent.css'
+import { Link  } from 'react-router-dom';
 import MobileApplicationDevelopment from '../assets/mobileappdevelopment.jfif';
 import SoftwareArchitecture from '../assets/softwarearchitecture.jfif';
+import { Button } from 'bootstrap';
 
-export default function EnrolledCoursesComponent() {
+export default function AvailableCoursesComponenet() {
 
-    const [enrolledCourses,setEnrolledCourses]=useState([])
-    const [marks,setMarks]=useState([])
+const [availablelCourses,setAvailablelCourses]=useState([])
 
   useEffect(() => {
 
-    getEnrolledCourses() 
-    
-  
-  }, []);
+    getAvailablelCourses() }, []);
 
 
-const getEnrolledCourses=()=>{
+const getAvailablelCourses=()=>{
 
-  UserService.getEnrCourses().then(res=>{
+  UserService.getAvlCourses().then(res=>{
 
-    setEnrolledCourses(res.data);
+    setAvailablelCourses(res.data);
     console.log(res.data);
 
   }).catch(error =>{
     console.log(error);
-}); 
+}) 
 
 
 }
-const unenroll=()=>{
 
-  
-
+const enroll=(id)=>{
+  UserService.addUserToCourse(id);
+  getAvailablelCourses();
 }
 
 
 
   return (
     <div>
-      <div className="title"><h1>Enrolled Courses</h1></div>          
 
-       <div className="row">
-          
+<div className="title"><h1>Available Courses</h1></div>  
+
+          <div className="row">
           
           {
           
-          enrolledCourses.map(
+          availablelCourses.map(
                 course=>
                                     
-          <div class=" card col-xl-4 col-lg-4 col-md-6">
+          <div class="card col-xl-4 col-lg-4 col-md-6">
                         <div class="courses-wrapper course-radius-none mb-30">
                             <div class="courses-thumb">
                                 <a href="/coursecontent/${course.id}"><img src={MobileApplicationDevelopment} /></a>
@@ -62,8 +59,12 @@ const unenroll=()=>{
                                 <div class="courses-content">
                                     
                                     <div class="courses-heading">
-                                    <Link to={`/coursecontent/${course.id}`}>{course.name}</Link>
+                                      <h3>{course.name}</h3>
+                                      
+                                   
+                                   <Link to="/enrollcourse" style={{marginRight:"",marginLeft:"15px"}} className="btn btn-danger">Enroll</Link>
                                     </div>
+                                    
                                     
                                 </div>
                             </div>

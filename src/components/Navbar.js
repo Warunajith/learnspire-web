@@ -20,7 +20,7 @@ function Navbar() {
             <Link to='/'> Home </Link>
             <Link to='/enrolled'> Enrolled Courses </Link>
             <Link to='/available'> Available Courses </Link>
-            <Link to='/about'> About </Link>
+            <Link to='/aboutus'> About </Link>
             <Link to='/profile'>
             
             <AccountCircleIcon/>
@@ -31,7 +31,7 @@ function Navbar() {
           <Link to='/'> Home </Link>
           <Link to='/enrolled'> Enrolled Courses </Link>
           <Link to='/available'> Available Courses </Link>
-          <Link to='/about'> About </Link>
+          <Link to='/aboutus'> About </Link>
           <Link to='/profile'>
             <AccountCircleIcon/>
           </Link>
