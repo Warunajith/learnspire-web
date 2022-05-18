@@ -72,6 +72,9 @@ export default function CourseContentComponent() {
         <div className="row">
              <div class="card ">
                   <h3>Week 01</h3>
+                 <div>
+                 <a href="/submition">Add Submition</a>
+                 </div>
              </div>
         </div>
 

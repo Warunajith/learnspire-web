@@ -15,6 +15,8 @@ import FooterComponent from './components/FooterComponent';
 import AboutUs from './components/AboutUs';
 import Profile from './components/Profile';
 import EnrollToCourse from './components/EnrollToCourseComponent'
+import SubmitionPage from './components/SubmitionPage'
+
 
 
 function App() {
@@ -38,7 +40,7 @@ function App() {
                   <Route path="/aboutus" element={ <><Navbar/>  <AboutUs/> <FooterComponent /></>}/>
                   <Route path="/profile" element={ <><Navbar/>  <Profile/> <FooterComponent /></>}/>
                   <Route path="/enrolltocourse" element={ <><Navbar/>   <EnrollToCourse /> <FooterComponent /></>}/>
-                  
+                  <Route path="/submition" element={ <><Navbar/>   <SubmitionPage /> <FooterComponent /></>}/>
                  
                 </Routes>
                 
