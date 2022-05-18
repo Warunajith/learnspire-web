@@ -14,7 +14,7 @@ import HeaderComponent from './components/HeaderComponent';
 import FooterComponent from './components/FooterComponent';
 import AboutUs from './components/AboutUs';
 import Profile from './components/Profile';
-import EnrollCourse from './components/EnrollCourseComponent'
+import EnrollToCourse from './components/EnrollToCourseComponent'
 
 
 function App() {
@@ -37,7 +37,7 @@ function App() {
                   <Route path="/coursecontent/:id" element={ <> <Navbar/> <CourseContentComponent/> <FooterComponent /></>}/>
                   <Route path="/aboutus" element={ <><Navbar/>  <AboutUs/> <FooterComponent /></>}/>
                   <Route path="/profile" element={ <><Navbar/>  <Profile/> <FooterComponent /></>}/>
-                  <Route path="/enrollcourse" element={ <><Navbar/>   <EnrollCourse /> <FooterComponent /></>}/>
+                  <Route path="/enrolltocourse" element={ <><Navbar/>   <EnrollToCourse /> <FooterComponent /></>}/>
                   
                  
                 </Routes>
