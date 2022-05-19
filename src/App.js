@@ -56,11 +56,11 @@ function App() {
                 
                  
                  
-                  <Route path="/addnewcourse" element={<AddNewCourseComponent/>}></Route>
-                  <Route path="/addnewannouncement/:id" element={<AddAnnouncement/>}></Route>
-                  <Route path="/enrolledstudents/:id" element={<EnrolledStudents/>}></Route>
-                  <Route path="/addcontent/:id" element={<AddContentComponent/>}></Route>
-                  <Route path="/viewresults/" element={<ViewResultsComponent/>}></Route>
+                  <Route path="/addnewcourse" element={<> <Navbar/><AddNewCourseComponent/><FooterComponent /></>}></Route>
+                  <Route path="/addnewannouncement/:id" element={<> <Navbar/><AddAnnouncement/><FooterComponent /></>}></Route>
+                  <Route path="/enrolledstudents/:id" element={<> <Navbar/><EnrolledStudents/><FooterComponent /></>}></Route>
+                  <Route path="/addcontent/:id" element={<> <Navbar/><AddContentComponent/><FooterComponent /></>}></Route>
+                  <Route path="/viewresults/" element={<> <Navbar/><ViewResultsComponent/><FooterComponent /></>}></Route>
                   <Route path="/studentview" element={ <> <Navbar/> <StudentViewComponent /> <FooterComponent /></>}/>
                   <Route path="/lecturerView" element={ <> <Navbar/> <LecturerViewComponent/> <FooterComponent /></>}/>
                   <Route path="/available" element={ <> <Navbar/> <AvailableCoursesComponent/> <FooterComponent /></>}/>
