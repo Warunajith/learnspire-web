@@ -84,6 +84,21 @@ UserService.getCourseMarkOfUser(id).then(res=>{
              
         </div>
         <div className="row">
+        <div className='col-3'>
+        
+
+
+        <Link to={`/enrolledstudents/${id}`} className="btn btn-info"  style={{ display: showInfo ? "block" : "none" }}>Display Students</Link>
+        <h3 style={{ display: showInfo ?  "none":"block" }}>Marks:-{marks} </h3>
+        
+        </div>
+
+        <div className='col-4'>
+        
+        <Link to={`/addcontent/${id}`} className="btn btn-info"  style={{ marginTop:"10px",display: showInfo ? "block" : "none" }}>Add Content</Link>
+
+        
+        </div>
         <div class="card ">
         <h3>Announcements:-
         {announcements.map(msgData=>msgData.title)}</h3>
