@@ -76,19 +76,15 @@ UserService.getCourseMarkOfUser(id).then(res=>{
 
   
   return (
+     
     <div>
         <div className="row">
-<<<<<<< HEAD
-
-        <div className='col-8'>
-=======
              
                   <h3>Course Name</h3>
              
         </div>
         <div className="row">
         <div class="card ">
->>>>>>> 81492ac7db179860a10adae3df7362cd19674222
         <h3>Announcements:-
         {announcements.map(msgData=>msgData.title)}</h3>
         </div>
@@ -99,27 +95,8 @@ UserService.getCourseMarkOfUser(id).then(res=>{
       </div>
         </div>
         
-<<<<<<< HEAD
-        <div className='col-3'>
-        
-
-
-        <Link to={`/enrolledstudents/${id}`} className="btn btn-info"  style={{ display: showInfo ? "block" : "none" }}>Display Students</Link>
-        <h3 style={{ display: showInfo ?  "none":"block" }}>Marks:-{marks} </h3>
-        
-        </div>
-
-        <div className='col-4'>
-        
-        <Link to={`/addcontent/${id}`} className="btn btn-info"  style={{ marginTop:"10px",display: showInfo ? "block" : "none" }}>Add Content</Link>
-
-        
-        </div>
-        
-
-=======
-        </div>
-    </div> 
+          
+    <div>
         <div className="row">
         <div class="card ">
         <h3>Course Content</h3>
@@ -205,7 +182,6 @@ UserService.getCourseMarkOfUser(id).then(res=>{
                   <h3>Week 15</h3>
              </div>
         </div>
->>>>>>> 81492ac7db179860a10adae3df7362cd19674222
                 <div className="row">
                 <table className="table table-striped table-bordered">
                         <thead>
@@ -240,8 +216,11 @@ UserService.getCourseMarkOfUser(id).then(res=>{
 
           </div>
 
-
-    </div>
+          </div>
+          </div>
+          
+   
+    
   )
 }
     
