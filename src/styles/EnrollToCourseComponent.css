@@ -1,0 +1,23 @@
+.card{
+    margin: 20px;
+}
+
+.btn-success{
+    
+    height: 40px;
+    width: 200px;
+    margin: 20px;
+}
+
+.form-label{
+    height: 40px;
+    width: 300px;
+    margin: 2px;
+
+}
+
+.input-field{
+    height: 40px;
+    width: 300px;
+    margin: 2px;
+}
