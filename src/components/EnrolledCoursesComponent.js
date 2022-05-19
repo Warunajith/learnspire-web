@@ -55,7 +55,7 @@ const unenroll=()=>{
           <div class=" card col-xl-4 col-lg-4 col-md-6">
                         <div class="courses-wrapper course-radius-none mb-30">
                             <div class="courses-thumb">
-                                <a href="/coursecontent/${course.id}"><img src={MobileApplicationDevelopment} /></a>
+                                <a href={`/coursecontent/${course.id}`}><img src={MobileApplicationDevelopment} /></a>
                             </div>
                             
                             <div class="course-main-content clearfix">
