@@ -62,7 +62,8 @@ const enroll=(id)=>{
                                       <h3>{course.name}</h3>
                                       
                                    
-                                   <Link to="/enrolltocourse" style={{marginRight:"",marginLeft:"15px"}} className="btn btn-danger">Enroll</Link>
+                                      <button style={{marginRight:"",marginLeft:"15px"}} className="btn btn-danger" onClick={()=>enroll(course.id)}>Enroll</button>
+
                                     </div>
                                     
                                     
