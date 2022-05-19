@@ -65,6 +65,9 @@ getCourseMarkOfUser(id){
 getallmarks(){
     return axios.get('https://lms.team8backend.tech/mark/getallmarks', { headers: AuthenticationHeader()});
 }
+addMarkstoStudent(courseId,marks,email){
+    return axios.post('https://lms.team8backend.tech/mark/addmarks',{"courseId" :courseId ,"marks":marks,"studentEmail":email}, { headers: AuthenticationHeader()});
+}
 
 
 
