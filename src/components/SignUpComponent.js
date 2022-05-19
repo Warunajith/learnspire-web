@@ -10,28 +10,39 @@ import '../styles/SignUpComponent.css'
 
 export default function SignUpComponent() {
     
-
+ const navigate = useNavigate();
   const [firstName,setFirstName]=useState('')
   const [lastName,setLastName]=useState('')
   const [email,setEmail]=useState('')
   const [password,setPassword]=useState('')
-  const [role,setRole]=useState("lecturer")
+  const [confirmpassword,setConfirmPassword]=useState('')
+  const [role,setRole]=useState('')
+
 
 
   const saveUser=(e)=>{
 
     e.preventDefault();
+    if(firstName=="" ||lastName=="" ||email=="" ||role==""||password=="" ||confirmpassword==""){
+        alert("All the Fields are required")
+}
+else if(password!==confirmpassword){
+alert("Passwords not Matching");
+}
+else{
     const user={email,firstName,lastName,role,password}
     
     AuthenticationService.register(user).then((response)=>{
 
         console.log(response.data);
         alert("Registration Successful");
+        navigate("/signin")
 
       }).catch(error=>{
         console.log(error)
 
       });
+    }
   }
 
   return (
@@ -45,7 +56,7 @@ export default function SignUpComponent() {
 
                             <div className="card col-md-6 offset-md-3 offset-md-3">
                             
-                                   <h2>User SignUp</h2> 
+                            <h2 style={{marginRight:"",marginLeft:"180px"}}>User SignUp</h2>
                             
                             <div className='card-body'>
                             
@@ -102,16 +113,59 @@ export default function SignUpComponent() {
                                             onChange={(e)=>setPassword(e.target.value)}>
                                         </input>
                                     </div>
+                                    <div className="form-group mb-2">
+                                        <label className="form-label">
+                                        Confirm Password
+                                        </label>
+                                        <input type="password"
+                                            placeholder="Confirm the Password"
+                                            name="confirmpassword"
+                                            className="form-control"
+                                            value={confirmpassword}
+                                            onChange={(e)=>setConfirmPassword(e.target.value)}>
+                                        </input>
+                                    </div>
+                                    
+                                   <div>
+                                   <label className="form-label">
+                                        You are?
+                                        </label>
+                                        <label for="std" className="form-label" style={{marginRight:"15px",marginLeft:"10px"}}>
+                                        Student 
+                                        </label>
+                                        
+                                        <input type="radio"
+                                            id="std"
+                                            name="role"
+                                            value="student"
+                                            onChange={(e)=>setRole(e.target.value)}
+                                            />
 
-                                    <button className="btn btn-success" onClick={(e)=>saveUser(e)} style={{marginRight:"",marginLeft:"15px"}}>
+                                       <label for="lct" className="form-label" style={{marginRight:"15px",marginLeft:"10px"}}>
+                                        || Lecturer
+                                        </label>
+                                        
+                                        <input type="radio"
+                                            id="lct"
+                                            name="role"
+                                            value="lecturer"
+                                            onChange={(e)=>setRole(e.target.value)}
+                                            />
+                                            
+                                        </div>
+                                        
+                                    <div>
+                                    <br></br>
+                                    <button className="btn btn-success" onClick={(e)=>saveUser(e)} style={{marginRight:"15px",marginLeft:"135px"}}>
                                             SignUp
                                     </button>
                                    
-                                   <Link to="/" style={{marginRight:"",marginLeft:"15px"}} className="btn btn-danger">Cancel</Link>
-
+                                    <Link to="/"  className="btn btn-danger">Cancel</Link>
+                                   </div>
+                                   
                                     </form>
-
-                                </div>
+                                    </div>
+                                
                             </div>
                         </div>
                     </div>
