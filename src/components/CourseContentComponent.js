@@ -2,6 +2,7 @@ import React from 'react'
 import UserService from '../services/UserService';
 import { Link ,useParams,useNavigate} from 'react-router-dom';
 import { useState,useEffect } from 'react';
+import '../styles/CourseContentComponent.css'
 
 export default function CourseContentComponent() {
 
@@ -77,8 +78,17 @@ UserService.getCourseMarkOfUser(id).then(res=>{
   return (
     <div>
         <div className="row">
+<<<<<<< HEAD
 
         <div className='col-8'>
+=======
+             
+                  <h3>Course Name</h3>
+             
+        </div>
+        <div className="row">
+        <div class="card ">
+>>>>>>> 81492ac7db179860a10adae3df7362cd19674222
         <h3>Announcements:-
         {announcements.map(msgData=>msgData.title)}</h3>
         </div>
@@ -89,6 +99,7 @@ UserService.getCourseMarkOfUser(id).then(res=>{
       </div>
         </div>
         
+<<<<<<< HEAD
         <div className='col-3'>
         
 
@@ -106,6 +117,95 @@ UserService.getCourseMarkOfUser(id).then(res=>{
         </div>
         
 
+=======
+        </div>
+    </div> 
+        <div className="row">
+        <div class="card ">
+        <h3>Course Content</h3>
+        </div>
+        </div>
+
+        <div className="row">
+             <div class="card ">
+                  <h3>Week 01</h3>
+                 <div>
+                 <a href="/submition">Add Submition</a>
+                 </div>
+             </div>
+        </div>
+
+        <div className="row">
+             <div class="card ">
+                  <h3>Week 02</h3>
+             </div>
+        </div>
+        <div className="row">
+             <div class="card ">
+                  <h3>Week 03</h3>
+             </div>
+        </div>
+        <div className="row">
+             <div class="card ">
+                  <h3>Week 04</h3>
+             </div>
+        </div>
+        <div className="row">
+             <div class="card ">
+                  <h3>Week 05</h3>
+             </div>
+        </div>
+        <div className="row">
+             <div class="card ">
+                  <h3>Week 06</h3>
+             </div>
+        </div>
+        <div className="row">
+             <div class="card ">
+                  <h3>Week 07</h3>
+             </div>
+        </div>
+        <div className="row">
+             <div class="card ">
+                  <h3>Week 08</h3>
+             </div>
+        </div>
+        <div className="row">
+             <div class="card ">
+                  <h3>Week 09</h3>
+             </div>
+        </div>
+        <div className="row">
+             <div class="card ">
+                  <h3>Week 10</h3>
+             </div>
+        </div>
+        <div className="row">
+             <div class="card ">
+                  <h3>Week 11</h3>
+             </div>
+        </div>
+        <div className="row">
+             <div class="card ">
+                  <h3>Week 12</h3>
+             </div>
+        </div>
+        <div className="row">
+             <div class="card ">
+                  <h3>Week 13</h3>
+             </div>
+        </div>
+        <div className="row">
+             <div class="card ">
+                  <h3>Week 14</h3>
+             </div>
+        </div>
+        <div className="row">
+             <div class="card ">
+                  <h3>Week 15</h3>
+             </div>
+        </div>
+>>>>>>> 81492ac7db179860a10adae3df7362cd19674222
                 <div className="row">
                 <table className="table table-striped table-bordered">
                         <thead>

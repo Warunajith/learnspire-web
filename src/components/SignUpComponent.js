@@ -4,6 +4,7 @@ import { Link ,useParams,useNavigate} from 'react-router-dom';
 import axios from 'axios';
 import AuthenticationService from '../services/AuthenticationService';
 import FrontImage from '../assets/Image1.jpg'
+import '../styles/SignUpComponent.css'
 
 
 
