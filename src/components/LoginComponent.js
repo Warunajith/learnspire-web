@@ -31,13 +31,13 @@ export default function LoginComponent() {
                   if(roles==="student"){
                     UserService.addUser();
                     console.log(roles);
-                    navigate("/studentview");
+                    navigate("/enrolled");
 
                   }
                   else{
                     UserService.addUser();
                     console.log("Lecturer");
-                    navigate("/lecturerview");
+                    navigate("/enrolled");
                   }
                   
               }).catch(error=>{

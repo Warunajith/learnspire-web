@@ -39,7 +39,8 @@ export default function EnrolledStudents() {
 
                 UserService.addMarkstoStudent(id,addmarks,rowemail);
                 handleClose();
-                navigate(`/enrolledstudents/${id}`);
+                getEnrolledStudents(id);
+               // navigate(`/enrolledstudents/${id}`);
 
 
         }
@@ -55,8 +56,11 @@ export default function EnrolledStudents() {
   return (
     <div>
 
-
-<div className="row">
+<br></br>
+<br></br>
+       
+        <div className="row">
+        
                 <table className="table table-striped table-bordered">
                         <thead>
                             <tr>
@@ -76,7 +80,7 @@ export default function EnrolledStudents() {
                                         <td>{student.email}</td>
                                         <td>{student.firstName}</td>
                                         <td>{student.marks}</td>
-                                        <td><Button variant="info" onClick={()=>updateclick(student.email)}>Update</Button></td>
+                                        <td><Button variant="danger" onClick={()=>updateclick(student.email)}>Update</Button></td>
  
                                            
                                     </tr>
@@ -107,8 +111,8 @@ export default function EnrolledStudents() {
                         value={addmarks}
                         onChange={(e)=>setAddMarks(e.target.value)}></input>
 
-                        <button className="btn btn-success" onClick={(e)=>updateMarks(e)} style={{marginRight:"15px",marginLeft:"135px"}}>
-                                                            Add
+                        <button className="btn btn-success" onClick={(e)=>updateMarks(e)} style={{marginLeft:"10px"}}>
+                                                            Update
                                                     </button>
 
                         </form>

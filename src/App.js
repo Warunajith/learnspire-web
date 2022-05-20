@@ -22,6 +22,7 @@ import AboutUs from './components/AboutUs';
 import Profile from './components/Profile';
 import EnrollToCourse from './components/EnrollToCourseComponent'
 import SubmitionPage from './components/SubmitionPage'
+import NotificationsComponent from './components/NotificationsComponent';
 
 
 
@@ -70,6 +71,7 @@ function App() {
                   <Route path="/profile" element={ <><Navbar/>  <Profile/> <FooterComponent /></>}/>
                   <Route path="/enrolltocourse" element={ <><Navbar/>   <EnrollToCourse /> <FooterComponent /></>}/>
                   <Route path="/submition" element={ <><Navbar/>   <SubmitionPage /> <FooterComponent /></>}/>
+                  <Route path="/notifications" element={ <><Navbar/>   <NotificationsComponent/> <FooterComponent /></>}/>
                  
                 </Routes>
                 </div>

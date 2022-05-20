@@ -78,48 +78,39 @@ UserService.getCourseMarkOfUser(id).then(res=>{
   return (
      
     <div>
+        <br></br>
         <div className="row">
-             
-                  <h3>Course Name</h3>
-             
-        </div>
-        <div className="row">
-        <div className='col-3'>
-        
 
-
+        <div className='col-4'>
+      
         <Link to={`/enrolledstudents/${id}`} className="btn btn-info"  style={{ display: showInfo ? "block" : "none" }}>Display Students</Link>
-        <h3 style={{ display: showInfo ?  "none":"block" }}>Marks:-{marks} </h3>
+        
         
         </div>
 
         <div className='col-4'>
         
-        <Link to={`/addcontent/${id}`} className="btn btn-info"  style={{ marginTop:"10px",display: showInfo ? "block" : "none" }}>Add Content</Link>
-
+        <Link to={`/addcontent/${id}`} className="btn btn-primary"  style={{ display: showInfo ? "block" : "none" }}>Add Content</Link>
         
         </div>
-        <div class="card ">
-        <h3>Announcements:-
-        {announcements.map(msgData=>msgData.title)}</h3>
-        </div>
-
-
+        
         <div className='col-4'>
-        <Link to={`/addnewannouncement/${id}`} className="btn btn-info" style={{marginTop:"10px", display: showInfo ? "block" : "none" }} >Add Announcement</Link>
-      </div>
+        <Link to={`/addnewannouncement/${id}`} className="btn btn-warning" style={{display: showInfo ? "block" : "none" }} >Add Announcement</Link>
+       </div>
+       
         </div>
         
           
     <div>
         <div className="row">
-        <div class="card ">
+        <div className="card ">
         <h3>Course Content</h3>
         </div>
+        
         </div>
 
         <div className="row">
-             <div class="card ">
+             <div className="card ">
                   <h3>Week 01</h3>
                  <div>
                  <a href="/submition">Add Submition</a>
@@ -128,84 +119,79 @@ UserService.getCourseMarkOfUser(id).then(res=>{
         </div>
 
         <div className="row">
-             <div class="card ">
+             <div className="card ">
                   <h3>Week 02</h3>
              </div>
         </div>
         <div className="row">
-             <div class="card ">
+             <div className="card ">
                   <h3>Week 03</h3>
              </div>
         </div>
         <div className="row">
-             <div class="card ">
+             <div className="card ">
                   <h3>Week 04</h3>
              </div>
         </div>
         <div className="row">
-             <div class="card ">
+             <div className="card ">
                   <h3>Week 05</h3>
              </div>
         </div>
         <div className="row">
-             <div class="card ">
+             <div className="card ">
                   <h3>Week 06</h3>
              </div>
         </div>
         <div className="row">
-             <div class="card ">
+             <div className="card ">
                   <h3>Week 07</h3>
              </div>
         </div>
         <div className="row">
-             <div class="card ">
+             <div className="card ">
                   <h3>Week 08</h3>
              </div>
         </div>
         <div className="row">
-             <div class="card ">
+             <div className="card ">
                   <h3>Week 09</h3>
              </div>
         </div>
         <div className="row">
-             <div class="card ">
+             <div className="card ">
                   <h3>Week 10</h3>
              </div>
         </div>
         <div className="row">
-             <div class="card ">
+             <div className="card ">
                   <h3>Week 11</h3>
              </div>
         </div>
         <div className="row">
-             <div class="card ">
+             <div className="card ">
                   <h3>Week 12</h3>
              </div>
         </div>
         <div className="row">
-             <div class="card ">
+             <div className="card ">
                   <h3>Week 13</h3>
              </div>
         </div>
         <div className="row">
-             <div class="card ">
+             <div className="card ">
                   <h3>Week 14</h3>
              </div>
         </div>
         <div className="row">
-             <div class="card ">
+             <div className="card ">
                   <h3>Week 15</h3>
              </div>
         </div>
                 <div className="row">
-                <table className="table table-striped table-bordered">
+                <table>
                         <thead>
-                            <tr>
-                                
-                                <th>Title</th>
-                                <th>Content</th>
-                                <th>timeStamp</th>
-                            </tr>
+                           <th></th>
 
                         </thead>
                         <tbody>
@@ -214,11 +200,14 @@ UserService.getCourseMarkOfUser(id).then(res=>{
                                     contentrow=>
                                     <tr key={contentrow.courseId}>
                                     
-                                        <td>{contentrow.title}</td>
-                                        <td>{contentrow.content}</td>
-                                        <td>{contentrow.timeStamp}</td>
-                                       
-                                            
+                                       <td>
+                                        <div className="row">
+                                             <div className="card ">
+                                                  <h4>{contentrow.title}</h4>
+                                                  <h5>{contentrow.content}</h5>
+                                             </div>
+                                        </div>
+                                        </td>   
                                            
                                     </tr>
 

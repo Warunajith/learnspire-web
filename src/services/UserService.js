@@ -68,6 +68,15 @@ getallmarks(){
 addMarkstoStudent(courseId,marks,email){
     return axios.post('https://lms.team8backend.tech/mark/addmarks',{"courseId" :courseId ,"marks":marks,"studentEmail":email}, { headers: AuthenticationHeader()});
 }
+getNotofications(){
+    return axios.get('https://lms.team8backend.tech/announcement/getnotifications', { headers: AuthenticationHeader()});
+}
+getNotofication(courseId,title){
+    return axios.post('https://lms.team8backend.tech/announcement/getnotification',{"courseId" :courseId ,"title":title}, { headers: AuthenticationHeader()});
+
+
+
+}
 
 
 

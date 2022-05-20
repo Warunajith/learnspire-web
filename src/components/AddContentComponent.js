@@ -9,13 +9,14 @@ export default function AddContentComponent() {
     const [title,setTitle]=useState('')
     const [content,setContent]=useState('')
     const {id}=useParams();
+    const navigate = useNavigate();
   
     const saveCourseContent=(e)=>{
   
       e.preventDefault();
       
       UserService.addContent(id,title,content);
-      
+      navigate(`/addcontent/${id}`)
     }
 
   return (

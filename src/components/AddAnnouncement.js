@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState,useEffect } from 'react'
-import { Link ,useParams,useNavigate} from 'react-router-dom';
+import { Link ,useParams,useNavigate, Navigate} from 'react-router-dom';
 import UserService from '../services/UserService';
 
 
@@ -11,12 +11,14 @@ export default function AddAnnouncement() {
     const [title,setTitle]=useState('')
     const [content,setContent]=useState('')
     const {id}=useParams();
+    const navigate = useNavigate();
   
     const saveAnnouncement=(e)=>{
   
       e.preventDefault();
       
       UserService.addNewAnnouncement(id,title,content);
+      navigate(`/coursecontent/${id}`);
       
     }
 

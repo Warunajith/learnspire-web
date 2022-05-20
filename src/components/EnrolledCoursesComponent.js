@@ -42,7 +42,7 @@ const unenroll=()=>{
 
   return (
     <div>
-      <div className="title"><h1>Enrolled Courses</h1></div>          
+      <div className="title"><h1>Course Overview</h1></div>          
 
        <div className="row">
           
