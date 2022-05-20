@@ -25,20 +25,17 @@ export default function LoginComponent() {
               
               UserService.getUser().then(res=>{
 
-                  const roles=res.data.role;
-                  console.log(res.data);
+                 
+                 localStorage.setItem("role",res.data.role );
 
-                  if(roles==="student"){
-                    UserService.addUser();
-                    console.log(roles);
-                    navigate("/enrolled");
+                 console.log(res.data);
 
-                  }
-                  else{
-                    UserService.addUser();
-                    console.log("Lecturer");
-                    navigate("/enrolled");
-                  }
+                 UserService.addUser();
+                 console.log(res.data.role);
+                 navigate("/enrolled");
+
+                  
+                 
                   
               }).catch(error=>{
                 alert("Couldn't Get the API call done")

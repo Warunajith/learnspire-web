@@ -106,7 +106,7 @@ export default function NotificationsComponent() {
 
                         <Modal.Body>
 
-                              <h6>{notification.timeStamp.substring(0,10)} , {notification.timeStamp.substring(11,16)}</h6>
+                              <h6>{notification.timeStamp}</h6>
                               <h4>{notification.content}</h4>
                         
 
