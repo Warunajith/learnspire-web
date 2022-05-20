@@ -11,8 +11,9 @@ export default function CourseContentComponent() {
     const [announcements,setAnnouncements]=useState([]);
     const [marks,setMarks]=useState([]);
     const {id}=useParams();
-    // button hidden variable for Lecturer Only
-  const[showInfo,setShowInfo]=useState([]);
+
+   // button hidden variable for Lecturer Only
+   const[showInfo,setShowInfo]=useState([]);
     
 
     useEffect(() => {
@@ -42,12 +43,9 @@ export default function CourseContentComponent() {
 
 
 
-    UserService.getUser().then(res=>{
+    
 
-      const roles=res.data.role;
-      console.log(res.data);
-
-      if(roles==="student"){
+      if(localStorage.getItem('role')==="student"){
         console.log("upto now done")
         setShowInfo(false)
       }
@@ -57,20 +55,7 @@ export default function CourseContentComponent() {
      
       
       
-  }).catch(error=>{
-    console.log(error)
   
-});
-
-UserService.getCourseMarkOfUser(id).then(res=>{
-
-  setMarks(res.data.marks);
-  console.log(res.data);
-
-}).catch(error =>{
-    
-  console.log(error);
-});
 
 });
 
