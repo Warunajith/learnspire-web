@@ -1,0 +1,13 @@
+.title{
+    margin-top: 100px;
+    color: rgb(3, 3, 10);
+   padding-left: 400px;
+   background-color: aquamarine;
+}
+
+.card{
+
+    height: 150px;
+    border: 2px solid;
+}
+

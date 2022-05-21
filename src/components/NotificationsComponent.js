@@ -2,6 +2,7 @@ import React, {useState,useEffect} from 'react'
 import UserService from '../services/UserService';
 import { Link ,useParams,useNavigate, Navigate} from 'react-router-dom';
 import {  Modal } from 'react-bootstrap';
+import '../styles/Notification.css'
 
 
 export default function NotificationsComponent() {
@@ -53,9 +54,10 @@ export default function NotificationsComponent() {
 
   return (
     <div>
-<br></br>
-    <br></br>
+
 <div className="row">
+
+  <div className='title'><h1>Notifications</h1></div>
     
                 <table>
                         <thead>
@@ -69,6 +71,7 @@ export default function NotificationsComponent() {
                                     <tr key={contentrow.courseId}>
                                     
                                        <td>
+                                         <br></br>
                                         <div className="row">
                                             <div className="col-2">
 
