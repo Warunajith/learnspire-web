@@ -31,7 +31,7 @@ export default function ViewResultsComponent() {
 
 <div className="row">
     <br></br>
-                <table className="table table-striped table-bordered">
+                <table className="table table-striped table-bordered" style={{marginTop:"100px"}}>
                         <thead>
                             <tr>
                                 

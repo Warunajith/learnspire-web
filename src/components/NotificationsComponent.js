@@ -57,7 +57,7 @@ export default function NotificationsComponent() {
 
 <div className="row">
 
-  <div className='title'><h1>Notifications</h1></div>
+  <div className='title' style={{marginTop:"100px"}}><h1>Notifications</h1></div>
     
                 <table>
                         <thead>

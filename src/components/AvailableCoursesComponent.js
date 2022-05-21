@@ -49,13 +49,13 @@ const enroll=(id)=>{
           availablelCourses.map(
                 course=>
                                     
-          <div class="card col-3">
+          <div class="card col-3" style={{height:"250px", width:"300px"}}>
                         <div class="courses ">
                             <div class="courses-thumb">
                                 <a ><img src={MobileApplicationDevelopment} /></a>
                             </div>
                             
-                            <div class="course-main-content clearfix">
+                            <div class="course-main-content clearfix" style={{marginLeft:"30px"}}>
                                 <div class="courses-content">
                                     
                                     <div class="courses-heading">

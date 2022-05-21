@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 export default class Profile extends Component {
   render() {
     return (
-      <div>
+      <div style={{marginTop:"100px"}}>
           <h1>My Profile</h1>
         <div>
              <div className='row'>

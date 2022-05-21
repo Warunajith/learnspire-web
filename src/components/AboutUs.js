@@ -6,19 +6,19 @@ class AboutUs extends Component {
     render() {
         return (
             <div>
-                <h1>About Us</h1>
+                <div className='title'><h1>About Us</h1></div>
+                
                 <div >
                 <div className='home' style={{ backgroundImage: `url(${HomeImage})` }}></div>
                 </div>
-                <div><p>This is the learning management system for ABC university.</p></div>
+                
 
-                <div><h3>Faculty of science</h3>
-                <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+                <div className='card' style={{height:"100px", width:"1100px"}}><h3>Faculty of science</h3>
                 </div>
-                <div><h3>Faculty of arts</h3>
-                <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p></div>
-                <div><h3>Faculty of commerce</h3>
-                <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p></div>
+                <div className='card' style={{height:"100px", width:"1100px"}}><h3>Faculty of arts</h3>
+                </div>
+                <div className='card' style={{height:"100px", width:"1100px"}}><h3>Faculty of commerce</h3>
+                </div>
                 
             </div>
         );
