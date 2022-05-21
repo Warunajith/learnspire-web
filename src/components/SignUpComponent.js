@@ -3,7 +3,7 @@ import { useState,useEffect } from 'react'
 import { Link ,useParams,useNavigate} from 'react-router-dom';
 import axios from 'axios';
 import AuthenticationService from '../services/AuthenticationService';
-import FrontImage from '../assets/Image1.jpg'
+import FrontImage from '../assets/Signup.jpg'
 import '../styles/SignUpComponent.css'
 
 
@@ -50,15 +50,16 @@ else{
     <div>
         <div className='home' style={{ backgroundImage: `url(${FrontImage})` }}>
 
-        <div className='container'>
-                    <br></br>
+        <div >
+                    
                         <div className='row'>
 
-                            <div className="card col-md-6 offset-md-3 offset-md-3">
+                            <div className="card col-md-6 offset-md-3 offset-md-3" style={{height:"850px", width:"600px",marginTop:"30px"}}>
                             
                             <h2 style={{marginRight:"",marginLeft:"180px"}}>User SignUp</h2>
                             
-                            <div className='card-body'>
+                            <div className='card-body' style={{height:"800px", width:"550px"}}>
+                                
                             
                                     <form className="needs-validation">
                                     
@@ -156,11 +157,12 @@ else{
                                         
                                     <div>
                                     <br></br>
-                                    <button className="btn btn-success" onClick={(e)=>saveUser(e)} style={{marginRight:"15px",marginLeft:"135px"}}>
+                                    
+                                    <button className="btn btn-success" onClick={(e)=>saveUser(e)} style={{marginRight:"15px",marginLeft:"15px"}}>
                                             SignUp
                                     </button>
-                                   
-                                    <Link to="/"  className="btn btn-danger">Cancel</Link>
+                                    <Link to="/" style={{marginRight:"",marginLeft:"35px"}} className="btn btn-danger">Cancel</Link>
+                                    
                                    </div>
                                    
                                     </form>

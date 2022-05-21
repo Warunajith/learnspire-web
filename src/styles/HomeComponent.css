@@ -1,5 +1,5 @@
 .home {
-    width: 190vh;
+    width: 98%;
     height: 98vh;
     display: flex;
     justify-content: center;
@@ -8,7 +8,8 @@
     flex-direction: column;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 1500px 1000px;
+    background-size: cover;
+    background-color: rgb(255, 238, 250);
     
     
     

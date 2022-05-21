@@ -3,7 +3,7 @@ import { useState,useEffect } from 'react'
 import { Link ,useParams,useNavigate} from 'react-router-dom';
 import AuthenticationService from '../services/AuthenticationService';
 import UserService from '../services/UserService';
-import FrontImage from '../assets/Image1.jpg'
+import FrontImage from '../assets/Signup.jpg'
 import '../styles/LoginComponent.css'
 
 
@@ -60,11 +60,12 @@ export default function LoginComponent() {
                     <br></br>
                         <div className='row'>
 
-                            <div className="card col-md-6 offset-md-3 offset-md-3">
+                            <div className="card col-md-6 offset-md-3 offset-md-3" style={{height:"400px", width:"500px"}}>
                             
-                                   <h2>User Login</h2> 
+                            <div style={{marginLeft:"150px", marginTop:"15px"}}><h2>User Login</h2> </div>  
                             
                             <div className='card-body'>
+                            
                             
                                     <form>
        

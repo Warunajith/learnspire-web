@@ -1,5 +1,16 @@
 .home {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  width: 80%;
+  height: 90vh;
+  display: flex;
+  justify-content:left;
+  align-items: left;
+  margin: 0;
+  flex-direction: column;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   }
+
+  
+
+  
