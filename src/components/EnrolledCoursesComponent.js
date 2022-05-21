@@ -52,9 +52,9 @@ const unenroll=()=>{
           enrolledCourses.map(
                 course=>
                                     
-          <div class=" card col-xl-4 col-lg-4 col-md-6">
-                        <div class="courses-wrapper course-radius-none mb-30">
-                            <div class="courses-thumb">
+          <div class=" card col-3">
+                        <div class="course">
+                            <div class="courses">
                                 <a href={`/coursecontent/${course.id}`}><img src={MobileApplicationDevelopment} /></a>
                             </div>
                             
