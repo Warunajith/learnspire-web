@@ -49,21 +49,20 @@ const enroll=(id)=>{
           availablelCourses.map(
                 course=>
                                     
-          <div class="card col-xl-4 col-lg-4 col-md-6">
-                        <div class="courses-wrapper course-radius-none mb-30">
+          <div class="card col-3">
+                        <div class="courses ">
                             <div class="courses-thumb">
-                                <a href="/enrolltocourse"><img src={MobileApplicationDevelopment} /></a>
+                                <a ><img src={MobileApplicationDevelopment} /></a>
                             </div>
                             
                             <div class="course-main-content clearfix">
                                 <div class="courses-content">
                                     
                                     <div class="courses-heading">
-                                      <h3>{course.name}</h3>
+                                      <h6>{course.name}</h6>
                                       
-                                   
-                                      <button style={{marginRight:"",marginLeft:"15px"}} className="btn btn-danger" onClick={()=>enroll(course.id)}>Enroll</button>
-
+                                      <button style={{marginRight:"",marginLeft:"80px"}} className="btn btn-danger" onClick={()=>enroll(course.id)}>Enroll</button>
+                                      
                                     </div>
                                     
                                     
