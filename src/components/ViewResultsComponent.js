@@ -2,6 +2,8 @@ import React from 'react'
 import UserService from '../services/UserService';
 import { Link ,useParams,useNavigate} from 'react-router-dom';
 import { useState,useEffect } from 'react';
+import '../styles/ViewResultsComponent.css'
+
 
 export default function ViewResultsComponent() {
 
@@ -28,6 +30,7 @@ export default function ViewResultsComponent() {
     <div>
 
 <div className="row">
+    <br></br>
                 <table className="table table-striped table-bordered">
                         <thead>
                             <tr>
