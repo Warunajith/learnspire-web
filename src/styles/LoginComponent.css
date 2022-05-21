@@ -1,5 +1,28 @@
 .home {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  width: 98%;
+  height: 135vh;
+  display: flex;
+  justify-content:left;
+  align-items: left;
+  margin: 0;
+  flex-direction: column;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   }
+
+  .container{
+    margin-top: 180px;
+  }
+
+  
+  .card{
+    
+  }
+  .card-body{
+    width:400px ;
+    height:400px ;
+   
+  }
+
+  
