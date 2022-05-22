@@ -1,12 +1,12 @@
 import React from 'react'
 import { Link  } from 'react-router-dom';
-import FrontImage from '../assets/frontImage.jpg'
+import FrontImage from '../assets/Front.jfif'
 import '../styles/HomeComponent.css'
 
 export default function HomeComponent() {
 
   return (
-    <div className='home' style={{ backgroundImage: `url(${FrontImage})` }}>
+    <div className='home' style={{ backgroundImage: `url(${FrontImage})`,marginTop:"0px" }}>
       
     <div className='header'>
         <h1> Learning Managment System </h1>

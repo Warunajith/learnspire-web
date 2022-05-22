@@ -1,15 +1,10 @@
 .home {
-    width: 98%;
-    height: 98vh;
-    display: flex;
-    justify-content: center;
-    align-items: left;
-    margin: 0;
-    flex-direction: column;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: rgb(255, 238, 250);
+  
+  
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+    
     
     
     

@@ -25,13 +25,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgb(13, 13, 14);
+  
 }
 
 .navbar a {
   color: white;
   text-decoration: none;
-  margin: 20px;
+  margin-left: 20px;
 }
 
 .navbar .rightSide button {

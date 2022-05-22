@@ -35,7 +35,7 @@ function Navbar() {
     })
 
     return (
-      <div className='navbar'>
+      <div className='navbar' style={{marginTop:"0px"}}>
         <div className='leftSide' id={openLinks ? 'open' : 'close'}>
           <img  src={logo1} />
           <div className='hiddenLinks'>
