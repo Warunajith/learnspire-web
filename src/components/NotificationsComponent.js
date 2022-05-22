@@ -2,7 +2,6 @@ import React, {useState,useEffect} from 'react'
 import UserService from '../services/UserService';
 import { Link ,useParams,useNavigate, Navigate} from 'react-router-dom';
 import {  Modal } from 'react-bootstrap';
-import '../styles/Notification.css'
 
 
 export default function NotificationsComponent() {
@@ -15,6 +14,9 @@ export default function NotificationsComponent() {
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
+
+
+    const notifyDate = notification.timeStamp || '';
 
     useEffect(() => {
 
@@ -54,10 +56,9 @@ export default function NotificationsComponent() {
 
   return (
     <div>
-
+<br></br>
+    <br></br>
 <div className="row">
-
-  <div className='title' style={{marginTop:"100px"}}><h1>Notifications</h1></div>
     
                 <table>
                         <thead>
@@ -71,7 +72,6 @@ export default function NotificationsComponent() {
                                     <tr key={contentrow.courseId}>
                                     
                                        <td>
-                                         <br></br>
                                         <div className="row">
                                             <div className="col-2">
 
@@ -103,14 +103,16 @@ export default function NotificationsComponent() {
 
                         <Modal.Header closeButton>
 
-                        <Modal.Title>{notification.title}</Modal.Title>
-
+                        <Modal.Title><h2>{notification.title}</h2> <h6>{notifyDate.substring(0,10)}</h6></Modal.Title>
+                        
                         </Modal.Header>
 
                         <Modal.Body>
 
-                              <h6>{notification.timeStamp}</h6>
-                              <h4>{notification.content}</h4>
+                
+
+                              
+                              <h5>{notification.content}</h5>
                         
 
                         </Modal.Body>
