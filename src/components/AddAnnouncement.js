@@ -29,7 +29,7 @@ export default function AddAnnouncement() {
                     <br></br>
                         <div className='row'>
 
-                            <div className="card col-md-6 offset-md-3 offset-md-3">
+                            <div className="signform col-md-6 offset-md-3 offset-md-3">
                             
                                    <h2>Add New Announcement</h2> 
                             
@@ -73,7 +73,7 @@ export default function AddAnnouncement() {
                                             Add Announcement
                                     </button>
                                    
-                                   <Link to="/" style={{marginRight:"",marginLeft:"15px"}} className="btn btn-danger">Cancel</Link>
+                                   <Link to={`/coursecontent/${id}`} style={{marginRight:"",marginLeft:"15px"}} className="btn btn-danger">Cancel</Link>
 
                                     </form>
 
