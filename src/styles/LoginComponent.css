@@ -25,4 +25,13 @@
    
   }
 
-  
+  .loginf{
+
+    width: 800px;
+    background-color: rgba(29, 28, 28, 0.5);
+    margin: auto;
+    color: #FFFFFF;
+    padding: 10px 0px 10px 0px;
+    
+    border-radius: 15px 15px 15px 15px;
+}

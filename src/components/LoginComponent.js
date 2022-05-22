@@ -54,13 +54,14 @@ export default function LoginComponent() {
     }
   return (
     <div>
+        
         <div className='home' style={{ backgroundImage: `url(${FrontImage})` }}>
 
 <div className='container'>
                     <br></br>
                         <div className='row'>
 
-                            <div className="card col-md-6 offset-md-3 offset-md-3" style={{height:"400px", width:"500px"}}>
+                            <div className="loginf col-md-6 offset-md-3 offset-md-3" style={{height:"400px", width:"500px"}}>
                             
                             <div style={{marginLeft:"150px", marginTop:"15px"}}><h2>User Login</h2> </div>  
                             

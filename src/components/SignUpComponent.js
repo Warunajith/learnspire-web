@@ -54,7 +54,7 @@ else{
                     
                         <div className='row'>
 
-                            <div className="card col-md-6 offset-md-3 offset-md-3" style={{height:"850px", width:"600px",marginTop:"30px"}}>
+                            <div className="signform col-md-6 offset-md-3 offset-md-3" style={{height:"850px", width:"600px",marginTop:"30px"}}>
                             
                             <h2 style={{marginRight:"",marginLeft:"180px"}}>User SignUp</h2>
                             
@@ -143,7 +143,7 @@ else{
                                             />
 
                                        <label for="lct" className="form-label" style={{marginRight:"15px",marginLeft:"10px"}}>
-                                        || Lecturer
+                                        Lecturer
                                         </label>
                                         
                                         <input type="radio"

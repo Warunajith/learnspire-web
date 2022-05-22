@@ -77,7 +77,7 @@ export default function NotificationsComponent() {
 
                                             </div>
                                             
-                                             <div className="card  col-8" onClick={()=>viewNotification(contentrow.courseId,contentrow.title)}>
+                                             <div className="card col-8 bg-warning" style={{height:"100px"} }onClick={()=>viewNotification(contentrow.courseId,contentrow.title)}>
                                              <h4 >{contentrow.courseName}</h4>
                                                   <h5>{contentrow.title}</h5>
                                              </div>

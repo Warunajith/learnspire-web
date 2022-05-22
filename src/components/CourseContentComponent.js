@@ -88,91 +88,17 @@ export default function CourseContentComponent() {
           
     <div>
         <div className="row">
-        <div className="card ">
-        <h3>Course Content</h3>
+        
+        <h1 className="text-center">Course Content</h1>
         </div>
         
-        </div>
+        
 
-        <div className="row">
-             <div className="card ">
-                  <h3>Week 01</h3>
-                 <div>
-                 <a href="/submition">Add Submition</a>
-                 </div>
-             </div>
-        </div>
+        
 
-        <div className="row">
-             <div className="card ">
-                  <h3>Week 02</h3>
-             </div>
-        </div>
-        <div className="row">
-             <div className="card ">
-                  <h3>Week 03</h3>
-             </div>
-        </div>
-        <div className="row">
-             <div className="card ">
-                  <h3>Week 04</h3>
-             </div>
-        </div>
-        <div className="row">
-             <div className="card ">
-                  <h3>Week 05</h3>
-             </div>
-        </div>
-        <div className="row">
-             <div className="card ">
-                  <h3>Week 06</h3>
-             </div>
-        </div>
-        <div className="row">
-             <div className="card ">
-                  <h3>Week 07</h3>
-             </div>
-        </div>
-        <div className="row">
-             <div className="card ">
-                  <h3>Week 08</h3>
-             </div>
-        </div>
-        <div className="row">
-             <div className="card ">
-                  <h3>Week 09</h3>
-             </div>
-        </div>
-        <div className="row">
-             <div className="card ">
-                  <h3>Week 10</h3>
-             </div>
-        </div>
-        <div className="row">
-             <div className="card ">
-                  <h3>Week 11</h3>
-             </div>
-        </div>
-        <div className="row">
-             <div className="card ">
-                  <h3>Week 12</h3>
-             </div>
-        </div>
-        <div className="row">
-             <div className="card ">
-                  <h3>Week 13</h3>
-             </div>
-        </div>
-        <div className="row">
-             <div className="card ">
-                  <h3>Week 14</h3>
-             </div>
-        </div>
-        <div className="row">
-             <div className="card ">
-                  <h3>Week 15</h3>
-             </div>
-        </div>
+       
+        
+        
                 <div className="row">
                 <table>
                         <thead>

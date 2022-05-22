@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link  } from 'react-router-dom';
-import FrontImage from '../assets/Front.jfif'
+import FrontImage from '../assets/Front.jpg'
 import '../styles/HomeComponent.css'
 
 export default function HomeComponent() {
